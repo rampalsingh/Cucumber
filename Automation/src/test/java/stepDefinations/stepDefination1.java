@@ -38,4 +38,11 @@ public class stepDefination1 {
 		driver.findElement(By.id("lst-ib")).sendKeys(Keys.RETURN);
 	}
 
+	
+	
+	@Then("^Close the browser$")
+	public void Close_the_browser() throws Throwable {
+		driver.quit();
+		System.out.println("Test Passed");
+	}
 }
